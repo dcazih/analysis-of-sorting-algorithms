@@ -3,7 +3,7 @@ public class Analysis {
 
         // Desired maxInputSize specified through command line arguments or 100000 by default
         int maxInputSize = 100000;
-        if(args.length > 1) maxInputSize = Integer.valueOf(args[0]);
+        if(args.length >= 1) maxInputSize = Integer.valueOf(args[0]);
 
         // Test Arrays:
         System.out.println("\n       == Tests For Correctness On Each Algorithm ==");
