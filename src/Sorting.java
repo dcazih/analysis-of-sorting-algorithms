@@ -159,21 +159,21 @@ public class Sorting {
 
         // Calculate the mean execution time for each sort
         double meanExecutionTime = 0;
-        System.out.println("Experimental Results:");
+        System.out.printf("Experimental Results (for an array of size %s is): ", maxIntSize);
 
             // Calculating mean execution: Insertion Sort
         for (int i = 0; i < 20; i++) meanExecutionTime += insertionExecutionTimes[i]; // sum all execution times
         meanExecutionTime = (double) meanExecutionTime / 20; // divide by total num of execution times (20)
-        System.out.printf("The average time cost for Insertion Sort (for an array of size %s is): %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
+        System.out.printf("The average time cost for Insertion Sort: %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
 
             // Calculating mean execution: Merge Sort
         for (int i = 0; i < 20; i++) meanExecutionTime += mergeSortExecutionTimes[i]; // sum all execution times
         meanExecutionTime = (double) meanExecutionTime / 20; // divide by total num of execution times (20)
-        System.out.printf("The average time cost for Merge Sort (for an array of size %s is): %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
+        System.out.printf("The average time cost for Merge Sort: %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
 
             // Calculating mean execution: Quick Sort
         for (int i = 0; i < 20; i++) meanExecutionTime += quickSortExecutionTimes[i]; // sum all execution times
         meanExecutionTime = (double) meanExecutionTime / 20; // divide by total num of execution times (20)
-        System.out.printf("The average time cost for Quick Sort (for an array of size %s is): %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
+        System.out.printf("The average time cost for Quick Sort: %.2fms\n", maxIntSize, meanExecutionTime / 1000000);
     }
 }
